@@ -7,6 +7,7 @@ import Login from './components/Login/Login';
 import Signout from './components/Signout/Signout';
 import { AuthContext } from './contexts/Auth';
 import Notfound from './components/Notfound';
+import Register from './components/Register/Register'
 
 // load the posts
 // load the products
@@ -30,6 +31,7 @@ function App() {
           )
         }
         <Route path='/login' element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
     </>
